@@ -1,0 +1,13 @@
+from PyQt6.QtWidgets import QApplication, QMainWindow// qmainwindow is neede for statusbar(),menubar
+import sys 
+
+app = QApplication(sys.argv)//to open application //This creates a new QApplication instance
+
+window = QMainWindow()This creates a new QMainWindow instance
+window.statusBar().showMessage("bismilallah")
+window.menuBar().addMenu("FILE")
+window.show():// This displays the window on the screen.
+
+sys.exit(app.exec())//This starts the application event loop and waits for the user to close the window. Once the window is closed, the app.exec() method returns a status code, which is passed to sys.exit() to exit the application with the appropriate status code.
+
+
